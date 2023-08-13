@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title>Details Page</title>
+        <link rel="stylesheet" href="Style/style.css">
+    </head>
+    <body>
+
+      <div class="maindiv1">
+        <div class="navbar">
+          <ul>
+          <li><a href="Home.html">Home</a></li>
+          </ul>
+          <h1>Buy Tickets</h1>
+          <div class="nav1">
+              <p>Show your tickets via mobile<br>device or print at home</p>
+          <img src="Images/mob.jpg" class="mob">
+          </div>
+       </div>
+      </div>
+
+      <div class="tickbg">
+        <img src="Images/bg.jpg">
+    </div>
+
+    <div class="maindiv2">
+      <ul>
+          <li>Tickets</li>
+          <li class="g">></li>
+          <li class="litkt">Details</li>
+          <li class="g">></li>
+          <li>Payment</li>
+          <li class="g">></li>
+          <li>Confirmation</li>
+      </ul>
+  </div>
+
+  <div class="summarytable">
+    <table class="sumtbl">
+        <tr>
+            <td class="sumtblfont">Date</td>
+            <td id="selectedDateDisplay"></td>
+        </tr>
+        <tr>
+            <td class="sumtblfont">Duration</td>
+            <td id="saved-slots">Total Hours: 0.00</td>
+        </tr>
+        <tr class="sumtblrow1">
+            <td>Tickets</td>
+            <td>Charges</td>
+        </tr>
+        <tr>
+            <td>1 Foreigner Adult</td>
+            <td>LKR -/ 3,000</td>
+        </tr>
+        <tr class="sumtblrow2">
+            <td>Total Payable</td>
+            <td>(Total)</td>
+        </tr>
+    </table>
+</div>
+
+
+
+<div class="detdiv1">
+  <fieldset>
+
+    <legend>Enter Your Details</legend>
+
+  <div class="detform">
+
+
+    <div class="fld1">
+
+    <div class="prt1">
+    <label for="fName">First Name :</label>
+    <input type="text" name="fName" id="fName" maxlength="20">
+    </div>
+
+    <div class="prt1">
+      <label for="sName">Second Name :</label>
+      <input type="text" name="sName" id="sName" maxlength="20">
+      </div>
+
+    <div class="prt1">
+      <label for="mNum">Mobile Number :</label>
+      <input type="number" name="mNum" id="mNum" maxlength="15">
+      </div>
+
+      <div class="prt1">
+        <label for="dt">Date of Birth :</label>
+        <input type="date" name="dt" id="dt" value="1999-01-01">
+        </div>
+
+    </div>
+
+    <div class="fld2">
+
+      <div class="prt1">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com">
+        </div>
+
+        <div class="prt1">
+          <label for="confirmEmail">Confirm Email:</label>
+          <input type="email" id="confirmEmail" name="confirmEmail" placeholder="example@gmail.com">
+        </div>
+
+        <div class="prt1">
+          <label>Gender :</label>
+
+          <div class="gndr">
+            <div class="gpt1">
+              <input type="radio" name="gender" id="male">
+              <label for="Male">Male</label>
+            </div>
+
+            <div class="gpt1">
+              <input type="radio" name="gender" id="female">
+              <label for="Female">Female</label>
+            </div>
+          </div>
+        </div>
+
+    </div> <!--fld2-->
+   
+    </div> <!--detform-->
+
+    <a href="Payment.html" class="sbmtbtn">
+    <button class="submitButton" id="submitButton">Continue With Purchase</button>
+    </a>
+
+  </fieldset>
+</div>
+
+
+
+<script src="JavaScript/Ticket.js"></script>
+    </body>
+</html>

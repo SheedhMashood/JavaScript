@@ -1,0 +1,249 @@
+<html>
+<head>
+    <title>Tickets Page</title>
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+
+<body>
+    
+<div class="maindiv1">
+    <div class="navbar">
+        <ul>
+        <li><a href="Home.html">Home</a></li>
+        </ul>
+        <h1>Buy Tickets</h1>
+        <div class="nav1">
+            <p>Show your tickets via mobile<br>device or print at home</p>
+        <img src="Images/mob.jpg" class="mob">
+        </div>
+     </div>
+</div>
+
+<div class="mainbg">
+    <img src="Images/bg.jpg">
+</div>
+
+
+
+    <div class="maindiv2">
+        <ul>
+            <li class="litkt">Tickets</li>
+            <li class="g">></li>
+            <li>Details</li>
+            <li class="g">></li>
+            <li>Payment</li>
+            <li class="g">></li>
+            <li>Confirmation</li>
+        </ul>
+    </div>
+
+
+
+    <div class="tickdiv3">
+
+        <div class="calux">
+            <h1>When will you be coming?</h1>
+            <p>(Selected Date Be Displayed On The Left)</p>
+            <div class="calendar">
+                <div class="header">
+                    <h2 id="monthYear"></h2>
+                    <div class="clbtn">
+                        <button id="prevMonth">◀</button>
+                        <button id="nextMonth">▶</button>
+                    </div>
+                </div>
+                <div class="days">
+                    <div class="day">Sun</div>
+                    <div class="day">Mon</div>
+                    <div class="day">Tue</div>
+                    <div class="day">Wed</div>
+                    <div class="day">Thu</div>
+                    <div class="day">Fri</div>
+                    <div class="day">Sat</div>
+                </div>
+                <div class="dates" id="dates"></div>
+            </div>
+        </div>
+
+
+
+        <div class="guests">
+            <h1>Guests</h1>
+            <p>(Choose the no. of Tickets)</p>
+
+            <div class="tkt">
+
+                <div class="info1">
+                    <div class="i1">
+                        <h2>Adult</h2>
+                        <p>Above 18 yrs</p>
+                    </div>
+                    <div class="naps">
+                    <button id="minus1" class="subtract">-</button>
+                    <span id="no1" class="num00">0</span>
+                    <button id="plus1" class="addition">+</button>
+                    </div> 
+                </div>
+
+                    <div class="info1">
+                        <div class="i1">
+                            <h2>Child</h2>
+                            <p>5 to 18 yrs</p>
+                        </div>
+                        <div class="naps">
+                            <button id="minus2" class="subtract">-</button>
+                            <span id="no2" class="num00">0</span>
+                            <button id="plus2" class="addition">+</button>
+                            </div> 
+                    </div>
+
+                        <div class="info1">
+                            <div class="i1">
+                                <h2>Foreigner Adult</h2>
+                                <p>Above 18 yrs</p>
+                            </div>
+                            <div class="naps">
+                                <button id="minus3" class="subtract">-</button>
+                                <span id="no3" class="num00">0</span>
+                                <button id="plus3" class="addition">+</button>
+                                </div> 
+                        </div>
+
+                            <div class="info1">
+                                <div class="i1">
+                                    <h2>Foreigner Child</h2>
+                                    <p>5 to 18 yrs</p>
+                                </div>
+                                <div class="naps">
+                                    <button id="minus4" class="subtract">-</button>
+                                    <span id="no4" class="num00">0</span>
+                                    <button id="plus4" class="addition">+</button>
+                                    </div> 
+                            </div>
+
+                                <div class="info1">
+                                    <div class="i1">
+                                        <h2>Infant</h2>
+                                        <p>Below 5 yrs</p>
+                                    </div>
+                                    <div class="naps">
+                                        <button id="minus5" class="subtract">-</button>
+                                        <span id="no5" class="num00">0</span>
+                                        <button id="plus5" class="addition">+</button>
+                                        </div> 
+                                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="tickdiv4">
+
+        <h1>Ticket Pricing</h1>
+        <p>Based on 1 hour time slots</p>
+
+        <table class="tkttable">
+            <tr>
+                <th>Category</th>
+                <th>Normal Hours</th>
+                <th>Peak Hours</th>
+            </tr>
+            <tr>
+                <td class="tkt1">SL Adult</td>
+                <td>LKR -/ 1.300</td>
+                <td>LKR -/ 2.000</td>
+            </tr>
+            <tr>
+                <td class="tkt1">SL Child</td>
+                <td>LKR -/ 600</td>
+                <td>LKR -/ 1,000</td>
+            </tr>
+            <tr>
+                <td class="tkt1">Foreigner Adult</td>
+                <td>LKR -/ 3,000</td>
+                <td>LKr -/ 4,000</td>
+            </tr>
+            <tr>
+                <td class="tkt1">Foreigner Child</td>
+                <td>LKR -/ 1,600</td>
+                <td>LKR -/ 2,500</td>
+            </tr>
+            <tr>
+                <td class="tkt1">Infant</td>
+                <td>LKR -/ 0</td>
+                <td>LKR -/ 0</td>
+            </tr>
+        </table>
+
+    </div>
+
+
+    <div class="summarytable">
+        <table class="sumtbl">
+            <tr>
+                <td class="sumtblfont">Date</td>
+                <td id="selectedDateDisplay"></td>
+            </tr>
+            <tr>
+                <td class="sumtblfont">Duration</td>
+                <td id="saved-slots">Total Hours: 0.00</td>
+            </tr>
+            <tr class="sumtblrow1">
+                <td>Tickets</td>
+                <td>Charges</td>
+            </tr>
+            <tr>
+                <td>1 Foreigner Adult</td>
+                <td>LKR -/ 3,000</td>
+            </tr>
+            <tr class="sumtblrow2">
+                <td>Total Payable</td>
+                <td>(Total)</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="drpdwn">
+
+        <h1>Select Time Slots</h1>
+
+        <label for="time-slot">Hold Shift to select multiple slots at once</label>
+        
+        <select id="time-slot" multiple>
+            <option value="7:00 AM - 8:00 AM">7:00 AM - 8:00 AM</option>
+            <option value="8:00 AM - 9:00 AM">8:00 AM - 9:00 AM</option>
+          <option value="9:00 AM - 10:00 AM">9:00 AM - 10:00 AM</option>
+          <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
+          <option value="11:00 AM - 12:00PM">11:00 AM - 12:00 PM</option>
+          <option value="12:00 PM - 1:00 PM">12:00 PM - 1:00 PM</option>
+          <option value="1:00 PM - 2:00 PM">1:00 PM - 2:00 PM</option>
+          <option value="2:00 PM - 3:00 PM">2:00 PM - 3:00 PM</option>
+          <option value="3:00 PM - 4:00 PM">3:00 PM - 4:00 PM</option>
+          <option value="4:00 PM - 5:00 PM">4:00 PM - 5:00 PM</option>
+          <option value="5:00 PM - 6:00 PM">5:00 PM - 6:00 PM</option>
+        </select>
+        
+        <button id="save-button" class="svbtn">Save</button>
+
+    </div>
+
+    <div class="tickdiv7">
+        <hr>
+        <div class="subtick7">
+            <a href="Details.html">
+        <button id="cnt">Continue With Purchase</button>
+            </a>
+        </div>
+        <hr>
+    </div>
+
+    
+    <script src="JavaScript/Ticket.js"></script>
+</body>
+
+
+</html>

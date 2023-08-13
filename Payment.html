@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>Payment</title>
+        <link rel="stylesheet" href="Style/style.css">
+    </head>
+
+    <body>
+        
+        <div class="maindiv1">
+            <div class="navbar">
+              <ul>
+              <li><a href="Home.html">Home</a></li>
+              </ul>
+              <h1>Buy Tickets</h1>
+              <div class="nav1">
+                  <p>Show your tickets via mobile<br>device or print at home</p>
+              <img src="Images/mob.jpg" class="mob">
+              </div>
+           </div>
+          </div>
+
+          <div class="tickbg">
+            <img src="Images/bg.jpg">
+        </div>
+    
+        <div class="maindiv2">
+          <ul>
+              <li>Tickets</li>
+              <li class="g">></li>
+              <li>Details</li>
+              <li class="g">></li>
+              <li class="litkt">Payment</li>
+              <li class="g">></li>
+              <li>Confirmation</li>
+          </ul>
+      </div>
+
+      <div class="summarytable">
+        <table class="sumtbl">
+            <tr>
+                <td class="sumtblfont">Date</td>
+                <td id="selectedDateDisplay"></td>
+            </tr>
+            <tr>
+                <td class="sumtblfont">Duration</td>
+                <td id="saved-slots">Total Hours: 0.00</td>
+            </tr>
+            <tr class="sumtblrow1">
+                <td>Tickets</td>
+                <td>Charges</td>
+            </tr>
+            <tr>
+                <td>1 Foreigner Adult</td>
+                <td>LKR -/ 3,000</td>
+            </tr>
+            <tr class="sumtblrow2">
+                <td>Total Payable</td>
+                <td>(Total)</td>
+            </tr>
+        </table>
+    </div>
+
+    
+    <div class="paydiv1">
+
+        <h2>Payment Details</h2>
+
+        <fieldset>        
+          <div class="detform">
+        
+        
+            <div class="fld1">
+        
+            <div class="prt1">
+            <label for="cNum">Card Number :</label>
+            <input type="number" name="cNum" id="cNum" maxlength="19">
+            </div>
+        
+            <div class="prt1">
+              <label for="eXp">Expiry Date :</label>
+              <input type="text" name="eXp" id="eXp" maxlength="5" placeholder="mm/yy">
+              </div>
+        
+            <div class="prt1">
+              <label for="Cvv">CVC / CVV :</label>
+              <input type="text" name="Cvv" id="Cvv" maxlength="2">
+              </div>
+        
+              <div class="prt1">
+                <label for="cName">Name on Card :</label>
+                <input type="text" name="cName" id="cName">
+                </div>
+        
+            </div>
+           
+            </div> <!--detform-->
+        
+            <a href="Confirmation.html" class="sbmtbtn">
+            <button class="payButton" id="payButton">PAY</button>
+            </a>
+        
+          </fieldset>
+    </div>
+
+
+
+<script src="JavaScript/Ticket.js"></script>
+    </body>
+</html>
